@@ -12,8 +12,7 @@ org = "amilaja"
 name = "com.wso2.demo.dan.demointegration"
 version = "0.1.0"
 dependencies = [
-	{org = "ballerina", name = "http"},
-	{org = "ballerinax", name = "zoho.crm.rest"}
+	{org = "ballerina", name = "http"}
 ]
 modules = [
 	{org = "amilaja", packageName = "com.wso2.demo.dan.demointegration", moduleName = "com.wso2.demo.dan.demointegration"}
@@ -290,27 +289,5 @@ name = "url"
 version = "2.6.0"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"}
-]
-
-[[package]]
-org = "ballerinai"
-name = "observe"
-version = "0.0.0"
-dependencies = [
-	{org = "ballerina", name = "jballerina.java"},
-	{org = "ballerina", name = "observe"}
-]
-
-[[package]]
-org = "ballerinax"
-name = "zoho.crm.rest"
-version = "1.3.1"
-dependencies = [
-	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "url"},
-	{org = "ballerinai", name = "observe"}
-]
-modules = [
-	{org = "ballerinax", packageName = "zoho.crm.rest", moduleName = "zoho.crm.rest"}
 ]
 
