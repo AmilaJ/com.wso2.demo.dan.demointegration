@@ -3,6 +3,3 @@ org = "amilaja"
 name = "com.wso2.demo.dan.demointegration"
 version = "0.1.0"
 title = "DemoIntegration"
-
-[build-options]
-sticky = true
