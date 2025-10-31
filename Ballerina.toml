@@ -2,4 +2,5 @@
 org = "amilaja"
 name = "com.wso2.demo.dan.demointegration"
 version = "0.1.0"
+distribution = "2201.12.0"
 title = "DemoIntegration"
