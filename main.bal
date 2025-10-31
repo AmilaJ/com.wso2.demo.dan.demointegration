@@ -1,9 +1,9 @@
 import ballerina/http;
 
-listener http:Listener httpListener = new (8080);
+service / on new http:Listener(9090) {
 
-service / on httpListener {
-    resource function get .() returns string {
+    // This function responds with `string` value `Hello, World!` to HTTP GET requests.
+    resource function get greeting() returns string {
         return "Hello, World!";
     }
 }
