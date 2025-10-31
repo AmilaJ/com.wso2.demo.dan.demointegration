@@ -2,6 +2,15 @@ import ballerina/http;
 
 final http:Client webhookClient = check new ("https://webhook.site");
 
+@http:ServiceConfig {
+    cors: {
+        allowOrigins: ["*"],
+        allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowHeaders: ["Content-Type", "Authorization"],
+        allowCredentials: false,
+        maxAge: 84900
+    }
+}
 service / on new http:Listener(9090) {
 
     // This function responds with `string` value `Hello, World!` to HTTP GET requests.
