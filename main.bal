@@ -6,7 +6,8 @@ final http:Client webhookClient = check new ("https://webhook.site");
     cors: {
         allowOrigins: ["*"],
         allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-        allowHeaders: ["Content-Type", "Authorization"],
+        allowHeaders: ["*"],
+        exposeHeaders: ["*"],
         allowCredentials: false,
         maxAge: 84900
     }
